@@ -13,10 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         activePill.style.width = `${btn.offsetWidth}px`;
         activePill.style.transform = `translateX(${btn.offsetLeft}px)`;
     }
-
-
-
-    
     const initialActive = document.querySelector(".nav-btn.active");
 
     if (initialActive) {
