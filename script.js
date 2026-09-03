@@ -7,11 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updatePill(btn, smooth = true) {
         if (!btn) return;
-
         activePill.style.transition = smooth
             ? "transform .5s cubic-bezier(.34,1.2,.64,1), width .5s cubic-bezier(.34,1.2,.64,1)"
             : "none";
-
         activePill.style.width = `${btn.offsetWidth}px`;
         activePill.style.transform = `translateX(${btn.offsetLeft}px)`;
     }
