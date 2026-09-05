@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         activePill.style.transform = `translateX(${btn.offsetLeft}px)`;
     }
     const initialActive = document.querySelector(".nav-btn.active");
-
     if (initialActive) {
         setTimeout(() => {
             updatePill(initialActive, false);
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (active) updatePill(active);
         }, 100);
     });
-
     window.addEventListener("resize", () => {
         const active = document.querySelector(".nav-btn.active");
         if (active) updatePill(active, false);
